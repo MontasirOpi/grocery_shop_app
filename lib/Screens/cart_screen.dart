@@ -19,17 +19,17 @@ class CartScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             //List of card items
             children: [
-               Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              child: Text(
-                'My Cart',
-                style: GoogleFonts.notoSerif(
-                  fontSize:
-                      32, // Adjusted for better compatibility on small screens
-                  fontWeight: FontWeight.bold,
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 24),
+                child: Text(
+                  'My Cart',
+                  style: GoogleFonts.notoSerif(
+                    fontSize:
+                        32, // Adjusted for better compatibility on small screens
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ),
               Expanded(
                 child: ListView.builder(
                   itemCount: value.cartItems.length,
@@ -49,11 +49,11 @@ class CartScreen extends StatelessWidget {
                           title: Text(value.cartItems[index][0]),
                           subtitle: Text('\$' + value.cartItems[index][1]),
                           trailing: IconButton(
-                            icon: const Icon(Icons.cancel),
-                            onPressed: () =>
+                              icon: const Icon(Icons.cancel),
+                              onPressed: () {
                                 Provider.of<CartModel>(context, listen: false)
-                                    .removeItemsFromCart(index),
-                          ),
+                                    .removeItemsFromCart(index);
+                              }),
                         ),
                       ),
                     );
@@ -96,7 +96,7 @@ class CartScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(12),
                         ),
                         padding: EdgeInsets.all(12),
-                        child: Row(
+                        child: const Row(
                           children: [
                             Text(
                               'Pay Now',
