@@ -1,6 +1,9 @@
 # grocery_shop_app
 
 A new Flutter project.
+![grocery app](https://github.com/user-attachments/assets/56c93816-9280-4509-b08a-36b9e05b56e9)
+![grocery app1](https://github.com/user-attachments/assets/ef8a8f7e-5b4b-40a4-b8d2-44135ebc9c76)
+
 
 ## Getting Started
 
