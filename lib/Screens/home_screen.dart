@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: SafeArea(
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const SizedBox(height: 48),
             const Padding(
